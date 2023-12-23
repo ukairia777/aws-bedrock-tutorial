@@ -1,0 +1,1 @@
+streamlit run yt_sum_trans_aws.py --server.port 8501

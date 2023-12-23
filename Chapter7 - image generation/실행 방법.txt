@@ -1,0 +1,1 @@
+streamlit run img_generation.py --server.port 8501
