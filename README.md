@@ -1,5 +1,5 @@
 # bedrock-tutorial
-streamlit과 bedrock의 anthropic의 claude2 모델을 가지고 AI 어플리케이션을 개발합니다.
+streamlit과 AWS의 bedrock의 anthropic의 claude2 모델을 가지고 AI 어플리케이션을 개발합니다.
 
 ## Chapter 2 - 번역기
 - LLM을 가지고 영어, 중국어, 한국어, 일본어로 변환 가능한 번역기를 만들어봅시다.
