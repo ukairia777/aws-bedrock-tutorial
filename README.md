@@ -2,7 +2,7 @@
 streamlit과 bedrock의 anthropic의 claude2 모델을 가지고 AI 어플리케이션을 개발합니다.
 
 ## Chapter 2 - 번역기
-<img src="https://wikidocs.net/images/page/215361/%EC%BA%A1%EC%B2%98%EC%9D%B4%EB%AF%B8%EC%A7%80.PNG" width="250">
+<img src="https://wikidocs.net/images/page/215361/%EA%B7%B8%EB%A6%BC1.PNG" width="400">
 
 ## Chapter 3 - 텍스트 요약기
 <img src="https://wikidocs.net/images/page/37127/%ED%91%9C%EC%A7%80.png" width="250">
