@@ -1,5 +1,3 @@
-## streamlit==1.29.0
-
 import streamlit as st
 import requests
 import pandas as pd

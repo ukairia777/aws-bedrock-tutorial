@@ -1,6 +1,3 @@
-# pip install boto3
-# pip install streamlit-chat==0.0.2.2
-# 모델은 anthropic.claude-v2:1로 하세요.
 from openai import OpenAI
 import streamlit as st
 import os, tenacity

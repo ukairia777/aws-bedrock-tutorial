@@ -1,1 +1,0 @@
-streamlit run summerize_text_aws.py --server.port 8501
