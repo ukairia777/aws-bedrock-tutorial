@@ -1,2 +1,3 @@
-streamlit==1.29.0
+pip install streamlit==1.29.0
+pip install boto3
 streamlit run img_generation.py --server.port 8501
