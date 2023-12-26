@@ -17,7 +17,7 @@ bedrock = session.client(
     endpoint_url="https://bedrock-runtime.us-east-1.amazonaws.com"
 ) 
 
-bedrock_model_id = "stability.stable-diffusion-xl-v0"
+bedrock_model_id = "stability.stable-diffusion-xl-v0" # stability.stable-diffusion-xl-v1로 바꿔보세요.
 
 def get_response_image_from_payload(response): 
 
@@ -32,7 +32,7 @@ def get_image_response(prompt_content):
     request_body = json.dumps({"text_prompts": 
                                [ {"text": prompt_content } ], 
                                "cfg_scale": 9, 
-                               "steps": 50, }) 
+                               "steps": 80, }) 
     
     response = bedrock.invoke_model(body=request_body, modelId=bedrock_model_id)
     
