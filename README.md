@@ -2,7 +2,7 @@
 - Develop an AI application utilizing Streamlit, AWS's Bedrock, and Anthropic's Claude2 model.
 - streamlit과 AWS의 bedrock의 anthropic의 claude2 모델을 가지고 AI 어플리케이션을 개발합니다.
 
-## Chapter 2 - 번역기
+## Chapter 3 - 번역기
 - Let's create a translator capable of converting text among English, Chinese, Korean, and Japanese using a Large Language Model (LLM)
 - LLM을 가지고 영어, 중국어, 한국어, 일본어로 변환 가능한 번역기를 만들어봅시다.
 <img src="https://wikidocs.net/images/page/215361/%EC%BA%A1%EC%B2%98.PNG" width="500">
