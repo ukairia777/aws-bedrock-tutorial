@@ -1,4 +1,3 @@
-from openai import OpenAI
 import streamlit as st
 import os, tenacity
 import pandas as pd
