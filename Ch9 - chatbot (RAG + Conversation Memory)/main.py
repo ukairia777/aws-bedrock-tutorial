@@ -7,6 +7,7 @@ from langchain.indexes import VectorstoreIndexCreator
 from langchain.vectorstores import FAISS
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.document_loaders import PyPDFLoader
+import streamlit as st 
 
 # get_rag_chat_response()에서 호출.
 def get_llm():
@@ -61,3 +62,35 @@ def get_rag_chat_response(input_text, memory, index):
     chat_response = conversation_with_retrieval({"question": input_text})  
     print(chat_response)
     return chat_response['answer']
+
+# 여기서부터 front 코드.
+
+# get_index() 함수를 호출.
+index = get_index()
+st.set_page_config(page_title="Chatbot")
+st.title("Chatbot") 
+
+if 'memory' not in st.session_state:
+    # get_memory() 함수를 호출.
+    st.session_state.memory = get_memory() 
+
+if 'chat_history' not in st.session_state: 
+    st.session_state.chat_history = [] 
+
+for message in st.session_state.chat_history: 
+    with st.chat_message(message["role"]): 
+        st.markdown(message["text"])
+
+input_text = st.chat_input("Chat with your bot here") 
+
+if input_text:  
+    with st.chat_message("user"):
+        st.markdown(input_text) 
+    st.session_state.chat_history.append({"role":"user", "text":input_text})  
+
+    # get_chat_response() 함수를 호출.
+    chat_response = get_rag_chat_response(input_text=input_text, memory=st.session_state.memory, index=index)  
+    with st.chat_message("assistant"): 
+        st.markdown(chat_response)
+
+    st.session_state.chat_history.append({"role":"assistant", "text":chat_response})

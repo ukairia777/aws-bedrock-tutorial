@@ -3,4 +3,5 @@ pip install boto3
 pip install pypdf==3.17.3
 pip install langchain==0.0.352
 pip install faiss-cpu
-streamlit run front.py --server.port 8501
+streamlit run main.py --server.port 8501
+# 또는 streamlit run front.py --server.port 8501
