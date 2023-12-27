@@ -1,0 +1,6 @@
+pip install boto3
+pip install pypdf==3.17.3
+pip install langchain==0.0.352
+pip install gradio
+pip install chromadb
+python chatbot.py
