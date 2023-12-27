@@ -1,5 +1,4 @@
 from langchain.embeddings import BedrockEmbeddings
-# from langchain.chat_models import ChatOpenAI
 from langchain.chat_models import BedrockChat
 from langchain.vectorstores import Chroma
 from langchain.chains import RetrievalQA
