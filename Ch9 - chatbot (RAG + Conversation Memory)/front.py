@@ -1,4 +1,3 @@
-# pip install pypdf==3.17.3
 import streamlit as st 
 import lib as glib
 

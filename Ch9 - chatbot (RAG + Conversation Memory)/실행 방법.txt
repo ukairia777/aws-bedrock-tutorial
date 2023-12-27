@@ -1,1 +1,0 @@
-streamlit run front.py --server.port 8501

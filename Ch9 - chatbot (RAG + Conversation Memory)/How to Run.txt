@@ -1,0 +1,6 @@
+pip install streamlit==1.29.0
+pip install boto3
+pip install pypdf==3.17.3
+pip install langchain==0.0.352
+pip install faiss-cpu
+streamlit run front.py --server.port 8501
