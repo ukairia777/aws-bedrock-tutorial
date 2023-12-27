@@ -44,6 +44,15 @@ qa_chain = RetrievalQA.from_chain_type(
     retriever=retriever,
     return_source_documents=True)
 
+'''
+Use the following pieces of context to answer the users question.
+If you don't know the answer, just say that you don't know, don't try to make up an answer.
+----------------
+{텍스트}
+
+{질문}
+'''
+
 def get_chatbot_response(chatbot_response):
     return chatbot_response['result'].strip()
 
@@ -70,3 +79,4 @@ with gr.Blocks() as demo:
 
 # 인터페이스 실행.
 demo.launch(debug=True)
+
