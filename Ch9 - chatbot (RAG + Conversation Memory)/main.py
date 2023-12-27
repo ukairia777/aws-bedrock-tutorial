@@ -9,7 +9,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.document_loaders import PyPDFLoader
 import streamlit as st 
 
-# get_rag_chat_response()에서 호출.
+# get_rag_chat_response()에서 호출. 
 def get_llm():
     model_kwargs = {
         "temperature": 0,
@@ -24,7 +24,7 @@ def get_llm():
     
     return llm
 
-# 텍스트를 타이탄 임베딩을 이용하여 임베딩. 해당 코드는 front에서 사용 예정.
+# 텍스트를 타이탄 임베딩을 이용하여 임베딩.
 def get_index(): 
     embeddings = BedrockEmbeddings(
         region_name='us-east-1',
