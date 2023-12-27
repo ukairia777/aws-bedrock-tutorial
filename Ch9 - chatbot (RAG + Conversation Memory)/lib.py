@@ -1,4 +1,3 @@
-# pip install pypdf==3.17.3
 from langchain.memory import ConversationBufferWindowMemory
 from langchain.llms.bedrock import Bedrock
 from langchain.chains import LLMChain, ConversationalRetrievalChain
